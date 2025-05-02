@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="All Test Suite">
+
+    <test verbose="2" preserve-order="true" name="C:/Users/Admin/DevOps/src/test/java/CRMTestCases/LoginPageTC.java">
+        <classes>
+            <class name="CRMTestCases.LoginPageTC"/>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="C:/Users/Admin/DevOps/src/test/java/CRMTestCases/HomePageTC.java">
+        <classes>
+            <class name="CRMTestCases.HomePageTC"/>
+        </classes>
+    </test>
+
+</suite>
