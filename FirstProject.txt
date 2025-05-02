@@ -4,6 +4,8 @@ Course: Selenium Automation
 Batch: SA2501042
 Duration: 4-5 month
 
+ Tester:1 My name is Mohit Prajapat...........
+
 
 
 
