@@ -5,13 +5,7 @@
 
     <test verbose="2" preserve-order="true" name="C:/Users/Admin/DevOps/src/test/java/CRMTestCases/LoginPageTC.java">
         <classes>
-            <class name="CRMTestCases.LoginPageTC"/>
-        </classes>
-    </test>
-
-    <test verbose="2" preserve-order="true" name="C:/Users/Admin/DevOps/src/test/java/CRMTestCases/HomePageTC.java">
-        <classes>
-            <class name="CRMTestCases.HomePageTC"/>
+            <class name="CRMTestCases.AllTestCases"/>
         </classes>
     </test>
 

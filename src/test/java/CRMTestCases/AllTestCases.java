@@ -1,5 +1,6 @@
 package CRMTestCases;
 
+import CRMUtility.ScreenShot;
 import CRMWebPage.HomePage;
 import CRMWebPage.LoginPage;
 import org.openqa.selenium.WebDriver;
@@ -9,6 +10,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
 import java.time.Duration;
 
 public class AllTestCases
@@ -16,7 +18,7 @@ public class AllTestCases
     WebDriver driver ;
     public LoginPage lp;
     public HomePage hp;
-
+    public ScreenShot screenshot;
      @BeforeTest
     public void setup()
     {
@@ -31,17 +33,21 @@ public class AllTestCases
 
 
     @Test
-    public void validatelogin() throws InterruptedException
+    public void validatelogin() throws InterruptedException, IOException
     {
+       ScreenShot.getScreenshot(driver);// at login page
         String url =lp.dologin("Admin","admin123");
+       ScreenShot.getScreenshot(driver);
+       // screenshot.getScreenshot();// after login home page
         Assert.assertTrue(url.contains("dashboard"),"TC failed,login fail");
         System.out.println("TC pass: loggin success");
     }
 
     @Test(priority = 1)
-    public void clickInfo()
+    public void clickInfo() throws IOException
     {
-        hp.personalinfo();
+         hp.personalinfo();
+      //  screenshot.getScreenshot();
     }
 
     @Test(priority = 2)
